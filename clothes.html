@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>VEREN</title>
+
+    <!-- 웹폰트 연결 -->
+    <!-- font-family: 'Pretendard'; -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- aos 연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- 외부 css 연결 -->
+    <link rel="stylesheet" href="css/clothes_style.css">
+
+    <!-- 파비콘 연결 -->
+    <link rel="shortcut icon" href="./imges/main/favicon.svg" type="image/x-icon">
+
+    <!-- contrl f2 : 같은 이름 잡아서 바꿔주기 -->
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- header-->
+        <!-- 너비값 100%/ .submenu의 기준점 -->
+        <div class="header_wrap">
+            <!-- header -->
+            <div id="header">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./imges/main/logo.svg" alt="로고">
+                    </a>
+                </h1>
+
+                <ul class="gnb">
+                    <li><a href="./brand.html">브랜드</a></li>
+                    <li><a href="./magazine.html">매거진</a></li>
+                    <li>
+                        <a href="./necessities.html">생활</a>
+
+                        <!-- submenu -->
+                        <div class="submenu">
+                            <ul class="inner_submenu">
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board01">주방용품</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board02">욕실용품</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board03">청소용품</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board04">세탁용품</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board05">패브릭</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board06">뷰티</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board07">문구</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="clothes.html" class="on">의복</a>
+
+                        <!-- submenu -->
+                        <div class="submenu">
+                            <ul class="inner_submenu">
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="clothes.html?tab=Board01">남성</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="clothes.html?tab=Board02">여성</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="clothes.html?tab=Board03">아동</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="clothes.html?tab=Board04">패션잡화</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="support.html">고객지원</a>
+
+                        <!-- submenu -->
+                        <div class="submenu">
+                            <ul class="inner_submenu">
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board01">EVENT</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board02">FAQ</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board03">공지사항</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board04">1:1문의</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board05">매장안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="util">
+                    <li>
+                        <a href="#">
+                            <img src="./imges/main/icon_micro.svg" alt="검색">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imges/main/icon_user.svg" alt="내정보">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imges/main/icon_shopping.svg" alt="장바구니">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imges/main/icon_3lines.svg" alt="더보기">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /header -->
+
+        <!-- nav - 오른쪽 네비게이션바 -->
+        <div class="nav">
+            <ul class="nav_box">
+                <li>
+                    <a href="support.html?tab=Board01">
+                        <div class="inner_nav_box">
+                            <img src="./imges/main/icon_event.jpg" alt="고객문의 아이콘">
+                            <p>EVENT</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="support.html?tab=Board02">
+                        <div class="inner_nav_box">
+                            <img src="./imges/main/icon_cs.jpg" alt="고객센터 아이콘">
+                            <p>고객센터</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.kakaocorp.com/page/" target="_blank">
+                        <div class="inner_nav_box">
+                            <img src="./imges/main/icon_kakao.jpg" alt="카카오톡 아이콘">
+                            <p>카톡문의</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <button class="inner_nav_box inner_nav_box2" onclick="scrollToTop()">
+                        <img src="./imges/main/icon_up.svg" alt="맨 위로 올라가기 아이콘">
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- /nav -오른쪽 네비게이션바 -->
+
+        <!-- banner -->
+        <div id="banner">
+            <!-- slide swiper-->
+            <div class="swiper visual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <img src="./imges/clothes/clothes_banner1.png" alt="main banner">
+                        <div class="slide_txt">
+                            <strong>디테일이 만드는 편안함</strong>
+                            <p>셔츠·니트 시리즈</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide1 ">
+                        <img src="./imges/clothes/clothes_banner2.png" alt="main banner">
+                        <div class="slide_txt">
+                            <strong>편안한 감촉의 파자마</strong>
+                            <p>파자마 & 홈웨어</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide1">
+                        <img src="./imges/clothes/clothes_banner3.png" alt="main banner">
+                        <div class="slide_txt">
+                            <strong>오래 걸어도 산뜻한 스니커즈</strong>
+                            <p>방수 방향 스니커즈</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /slide swiper -->
+        </div>
+        <!-- /banner -->
+
+
+        <div id="section">
+
+            <!-- ▼ 1depth : 남성 / 여성 / 아동 / 패션잡화 -->
+            <ul id="box1">
+                <li class="tablink opacity" onclick="openBoard(event, 'Board01')">남성</li>
+                <li class="tablink" onclick="openBoard(event, 'Board02')">여성</li>
+                <li class="tablink" onclick="openBoard(event, 'Board03')">아동</li>
+                <li class="tablink" onclick="openBoard(event, 'Board04')">패션잡화</li>
+            </ul>
+
+
+            <!-- =====================================================
+         Board01 : 남성
+    ====================================================== -->
+            <div id="Board01" class="board">
+                <div class="deep3_board">
+                    <div class="list">
+                        <p>총 <span>82</span>개의 상품이 있습니다.</p>
+                        <ul class="list_option">
+                            <li><a href="#">리뷰많은순</a></li>
+                            <li><a href="#" class="on">인기순</a></li>
+                            <li><a href="#">최신순</a></li>
+                            <li><a href="#">낮은 가격순</a></li>
+                            <li><a href="#">높은 가격순</a></li>
+                        </ul>
+                    </div>
+                    <div class="products">
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes1.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>통기성 좋은 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (24)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes2.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>재생 폴리에스터 데님 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.8 (82)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes3.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>발수 집업 블루종</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (62)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes4.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>발수 서커 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>109,000원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.9 (33)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes5.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>리넨 매듭단추 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>69,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (45)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes6.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>소프트 클래식 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>129,000원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (44)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes7.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>신축성 있는 트랙 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>89,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.9 (62)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes8.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>라이트 캔버스 후드 블루종</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (35)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes9.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>드로스트링 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (70)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes10.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>다운 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.9 (72)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes11.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>발수 퀄팅 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (22)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/man/clothes12.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>코튼 데님 재킷</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>299,000원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (38)</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <!-- 상품 카드 반복 추가 -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- =====================================================
+         Board02 : 여성
+    ====================================================== -->
+            <div id="Board02" class="board" style="display: none;">
+                <div class="deep3_board">
+                    <div class="list">
+                        <p>총 <span>92</span>개의 상품이 있습니다.</p>
+                        <ul class="list_option">
+                            <li><a href="#">리뷰많은순</a></li>
+                            <li><a href="#" class="on">인기순</a></li>
+                            <li><a href="#">최신순</a></li>
+                            <li><a href="#">낮은 가격순</a></li>
+                            <li><a href="#">높은 가격순</a></li>
+                        </ul>
+                    </div>
+                    <div class="products">
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman1.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>딥그린 셔츠 원피스</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>49,000원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (32)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman2.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>어스 미디 스커트</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="sale_box"><span>10%</span>
+                                    <p>39,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.8 (80)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman3.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>소프트 크림 원피스</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,000원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.9 (43)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman4.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>샌드 셔츠 원피스</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,000원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (62)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman5.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>미스트 슬리브리스 원피스</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>69,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (55)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman6.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>헴프 혼방 데님 스커트</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>59,000원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (32)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman7.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>헴프 혼방 롱 베스트</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>59,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (55)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman8.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>헴프 혼방 점프 수트</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>59,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (62)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman9.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>라미 턱 스커트</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>129,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (27)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman10.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>스트레치 치노 A라인 스커트</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>49,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (55)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman11.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>라이트 긴소매 원피스</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>69,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (49)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/woman/woman12.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>워싱 리넨 긴소매 셔츠 원피스</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>79,000원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (55)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =====================================================
+         Board03 : 아동
+    ====================================================== -->
+            <div id="Board03" class="board" style="display: none;">
+                <div class="deep3_board">
+                    <div class="list">
+                        <p>총 <span>72</span>개의 상품이 있습니다.</p>
+                        <ul class="list_option">
+                            <li><a href="#">리뷰많은순</a></li>
+                            <li><a href="#" class="on">인기순</a></li>
+                            <li><a href="#">최신순</a></li>
+                            <li><a href="#">낮은 가격순</a></li>
+                            <li><a href="#">높은 가격순</a></li>
+                        </ul>
+                    </div>
+                    <div class="products">
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids1.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>모시 잠옷 세트</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>19,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (58)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids2.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>면 크루넥 반소매 티셔츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="sale_box"><span>10%</span>
+                                    <p>9,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.9 (32)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids3.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>저지 크루넥 티셔츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>9,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.9 (72)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids4.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>스웨트 하프 팬츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>10,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (42)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids5.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>몽글몽글 베어 바지</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>10,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (69)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids6.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>소프트 피크닉 티셔츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>9,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (59)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids7.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>햇살 코튼 티셔츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>9,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (36)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids8.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>살랑 봄바람 원피스</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>19,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (42)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids9.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>체크 민소매 티셔츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>10,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (35)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids10.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>프릴 모시 티셔츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>10,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (36)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids11.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>말랑 구름 긴소매 티셔츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>19,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.9(22)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/kids/kids12.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>달콤 캔디팝 티셔츠</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>9,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (26)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Board03 아동 -->
+
+
+            <!-- =====================================================
+         Board04 : 패션잡화
+    ====================================================== -->
+            <div id="Board04" class="board" style="display: none;">
+                <div class="deep3_board">
+                    <div class="list">
+                        <p>총 <span>102</span>개의 상품이 있습니다.</p>
+                        <ul class="list_option">
+                            <li><a href="#">리뷰많은순</a></li>
+                            <li><a href="#" class="on">인기순</a></li>
+                            <li><a href="#">최신순</a></li>
+                            <li><a href="#">낮은 가격순</a></li>
+                            <li><a href="#">높은 가격순</a></li>
+                        </ul>
+                    </div>
+                    <div class="products">
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion1.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>스니커 샌들</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>49,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (23)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion2.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>높이 조절 하드 캐리어</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="sale_box"><span>10%</span>
+                                    <p>209,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.8 (22)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion3.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>양산 겸용 접이식 우산</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>24,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (32)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion4.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>UV 컷 캐플린</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>39,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (49)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion5.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>UV 통기성 좋은 버킷햇</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>34,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (56)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion6.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>굿피트 리브 양말</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>4,500원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (33)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion7.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>레이온 혼방 레이스 양말</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>4,500원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (38)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion8.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>면 마이 에코백</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>4,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>4.9 (62)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion9.png" alt="자켓">
+                                    <div class="new_box">NEW</div>
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>발수 패딩 숄더백</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>49,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (23)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion10.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>발수 패딩 백팩</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>59,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (31)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion11.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>면 타월 손수건</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>3,900원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (12)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="inner_products">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="./imges/clothes/fashion/fashion12.png" alt="자켓">
+                                    <div class="like-btn">
+                                        <img src="./imges/necessities/icon_heart1.png" alt="좋아요" class="heart_off">
+                                        <img src="./imges/necessities/icon_heart2.png" alt="좋아요" class="heart_on">
+                                    </div>
+                                </div>
+                                <div class="products_color">
+                                    <p>굿피트 파일 양말</p>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sale_box"><span>10%</span>
+                                    <p>4,500원</p>
+                                </div>
+                                <div class="star_box">
+                                    <img src="./imges/necessities/Star1.png" alt="star">
+                                    <p>5.0 (55)</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Board04 패션잡화 -->
+
+
+            <!-- 페이지 번호 -->
+            <ul class="number">
+                <li class="on"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+
+        </div>
+        <!-- /section -->
+
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="inner_footer">
+                <div class="footer_left">
+                    <div class="footer_left_text1">
+                        <strong>
+                            고객센터
+                        </strong>
+                        <p>
+                            <a href="#">
+                                주문조회
+                            </a>
+                        </p>
+                        <p>
+                            <a href="support.html?tab=Board04">
+                                Q&A 문의
+                            </a>
+                        </p>
+                    </div>
+                    <div class="footer_left_text1">
+                        <strong>
+                            안내
+                        </strong>
+                        <p>
+                            <a href="support.html?tab=Board05">
+                                매장안내
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                인재채용
+                            </a>
+                        </p>
+                    </div>
+                    <div class="footer_left_text2">
+                        <strong>
+                            CS 운영시간
+                        </strong>
+                        <p>
+                            월-금 10:00 ~ 17:00 (공휴일 휴무)
+                        </p>
+                        <strong class="strong2">
+                            반품배송지
+                        </strong>
+                        <p>
+                            부산광역시 중구 중앙대로 54(중앙동 23-1)
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- sns랑 로고 position으로 띄워주기 -->
+                <div class="footer_right1">
+                    <ul class="footer_sns">
+                        <li>
+                            <a href="https://x.com/?lang=ko" target="_blank">
+                                <img src="./imges/main/main_footer_sns1.png" alt="sns x-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/?locale=ko_KR" target="_blank">
+                                <img src="./imges/main/main_footer_sns2.png" alt="sns facebook-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="./imges/main/main_footer_sns3.png" alt="sns instagram-icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="./imges/main/main_logo_white.svg" alt="logo">
+                </div>
+
+                <div class="footer_right">
+
+                    <p class="footer_p">
+                        TEl: 02-4682-0330 고객상담실: 01-050-3017 <br>
+                        본사: 부산광역시 중구 중앙대로 54(중앙동 23-1) <br>
+                        VEREN(주) 대표이사: 이예진 사업자등록번호:136-81-07235 <br>
+                        COPYRIGHT ⓒ VEREN LIVING ALL RIGHTS RESERVED <br>
+                        <br>
+                        이용약관 | 개인정보 처리방침
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /footer -->
+
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+
+    <script src="./js/script.js"></script>
+
+    <!-- aos scipt 연결 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+
+</html>

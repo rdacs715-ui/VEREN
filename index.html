@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>VEREN</title>
+
+    <!-- 웹폰트 연결 -->
+    <!-- font-family: 'Pretendard'; -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- aos 연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- 외부 css 연결 -->
+    <link rel="stylesheet" href="css/main_style.css">
+
+    <!-- 파비콘 연결 -->
+    <link rel="shortcut icon" href="./imges/main/favicon.svg" type="image/x-icon">
+
+    <!-- contrl f2 : 같은 이름 잡아서 바꿔주기 -->
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- 팝업창 -->
+        <div id="popup">
+            <div class="popup_position">
+                <img src="./imges/main/main_popup.png" alt="공지사항">
+                <a href="necessities.html?tab=Board05" class="popup_txt">확인하러 가기 ></a>
+            </div>
+
+            <div class="popup-footer">
+                <button onclick="closeToday()" class="popup_button2">오늘 하루 보지 않기</button>
+                <button onclick="closePopup()">닫기</button>
+            </div>
+        </div>
+
+
+        <!-- header-->
+        <!-- 너비값 100%/ .submenu의 기준점 -->
+        <div class="header_wrap">
+            <!-- header -->
+            <div id="header">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./imges/main/logo.svg" alt="로고">
+                    </a>
+                </h1>
+
+                <ul class="gnb">
+                    <li><a href="./brand.html">브랜드</a></li>
+                    <li><a href="./magazine.html">매거진</a></li>
+                    <li>
+                        <a href="./necessities.html">생활</a>
+
+                        <!-- submenu -->
+                        <div class="submenu">
+                            <ul class="inner_submenu">
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board01">주방용품</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board02">욕실용품</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board03">청소용품</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board04">세탁용품</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board05">패브릭</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board06">뷰티</a>
+                                </li>
+                                <li>
+                                    <!-- ::befor : 가상선택자 -->
+                                    <a href="necessities.html?tab=Board07">문구</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="clothes.html" class="on">의복</a>
+
+                        <!-- submenu -->
+                        <div class="submenu">
+                            <ul class="inner_submenu">
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="clothes.html?tab=Board01">남성</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="clothes.html?tab=Board02">여성</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="clothes.html?tab=Board03">아동</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="clothes.html?tab=Board04">패션잡화</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="support.html">고객지원</a>
+
+                        <!-- submenu -->
+                        <div class="submenu">
+                            <ul class="inner_submenu">
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board01">EVENT</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board02">FAQ</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board03">공지사항</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board04">1:1문의</a>
+                                </li>
+                                <li>
+                                    <!-- ::before : 가상선택자 -->
+                                    <a href="support.html?tab=Board05">매장안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="util">
+                    <li>
+                        <a href="#">
+                            <img src="./imges/main/icon_micro.svg" alt="검색">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imges/main/icon_user.svg" alt="내정보">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imges/main/icon_shopping.svg" alt="장바구니">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imges/main/icon_3lines.svg" alt="더보기">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /header -->
+
+        <!-- banner -->
+        <div id="banner">
+            <!-- slide swiper-->
+            <div class="swiper visual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <img src="./imges/main/main1_1.png" alt="main banner">
+                    </div>
+
+                    <div class="swiper-slide slide1 ">
+                        <img src="./imges/main/main1_2.png" alt="main banner">
+                        <div class="slide_txt">
+                            <p>
+                                부드러운 <br>
+                                감촉의 실내화
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide1">
+                        <img src="./imges/main/main1_3.png" alt="main banner">
+                        <div class="slide_txt2">
+                            <p>
+                                조용한 책장정리
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <!-- /slide swiper -->
+        </div>
+        <!-- /banner -->
+
+
+        <!-- nav - 오른쪽 네비게이션바 -->
+        <div class="nav">
+            <ul class="nav_box">
+                <li>
+                    <a href="support.html?tab=Board01">
+                        <div class="inner_nav_box">
+                            <img src="./imges/main/icon_event.jpg" alt="고객문의 아이콘">
+                            <p>EVENT</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="support.html?tab=Board02">
+                        <div class="inner_nav_box">
+                            <img src="./imges/main/icon_cs.jpg" alt="고객센터 아이콘">
+                            <p>고객센터</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.kakaocorp.com/page/" target="_blank">
+                        <div class="inner_nav_box">
+                            <img src="./imges/main/icon_kakao.jpg" alt="카카오톡 아이콘">
+                            <p>카톡문의</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <button class="inner_nav_box inner_nav_box2" onclick="scrollToTop()">
+                        <img src="./imges/main/icon_up.svg" alt="맨 위로 올라가기 아이콘">
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- /nav -오른쪽 네비게이션바 -->
+
+
+        <!-- section1 - 브랜드 소개 -->
+        <div id="section1">
+            <div class="inner_section1">
+                <div class="content">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">
+                        <img src="./imges/main/logo.svg" alt="로고">
+                    </h2>
+                    <p data-aos="fade-up" data-aos-duration="2000">
+                        도시 생활은 편리하지만, 시끄럽고 눈부신 자극이 많아
+                        <br>
+                        오히려 마음이 지치기 쉽습니다.
+                        <br><br>
+                        VEREN은 <span>초록(Verde)</span>이 주는 자연의 안정감과
+                        <br>
+                        <span>쉼(Rest)</span>이 주는 침묵 속의 회복을 하나의 이름으로 모아,
+                        <br><br>
+                        차분한 감각으로 마음을 다독이는 브랜드입니다.
+                    </p>
+                    <div class="button" data-aos="fade-up" data-aos-duration="3000">
+                        <a href="./brand.html">보러가기</a>
+                    </div>
+                </div>
+                <div class="images" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="./imges/main/main2.jpg" alt="브랜드 이미지">
+                </div>
+            </div>
+        </div>
+        <!-- /section1 -->
+
+        <!-- section2 - 메뉴-->
+        <div id="section2">
+            <ul class="list">
+                <li>
+                    <a href="necessities.html?tab=Board01">
+                        <div class="circle">
+                            <p>NEW</p>
+                        </div>
+                        <p>신상품</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="clothes.html?tab=Board01">
+                        <div class="circle2">
+                            <img src="./imges/main/main3_1.png" alt="의복">
+                        </div>
+                        <p>의복</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="necessities.html?tab=Board01">
+                        <div class="circle2">
+                            <img src="./imges/main/main3_2.png" alt="의복">
+                        </div>
+                        <p>주방</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="necessities.html?tab=Board02">
+                        <div class="circle2">
+                            <img src="./imges/main/main3_3.png" alt="의복">
+                        </div>
+                        <p>욕실</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="necessities.html?tab=Board03">
+                        <div class="circle2">
+                            <img src="./imges/main/main3_4.png" alt="의복">
+                        </div>
+                        <p>청소</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="necessities.html?tab=Board05">
+                        <div class="circle2">
+                            <img src="./imges/main/main3_5.png" alt="의복">
+                        </div>
+                        <p>패브릭</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="necessities.html?tab=Board06">
+                        <div class="circle2">
+                            <img src="./imges/main/main3_6.png" alt="의복">
+                        </div>
+                        <p>뷰티</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /section2 -->
+
+        <!-- sectin3 - 메인 배너-->
+        <div id="section3">
+            <div class="inner_section3">
+                <span data-aos="fade-up" data-aos-duration="1000">침구 기획전 UP TO 40%</span>
+                <p data-aos="fade-up" data-aos-duration="2000">포그네 침구 | 따드다미 커버</p>
+                <div class="button" data-aos="fade-up" data-aos-duration="3000">
+                    <a href="necessities.html?tab=Board05">알아보기</a>
+                </div>
+            </div>
+        </div>
+        <!-- /sectin3 -->
+
+        <!-- section4 - BEST ITEM -->
+        <div id="section4">
+            <p class="section4_title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                BEST
+            </p>
+            <!-- Swiper -->
+            <div class="swiper best">
+                <div class="swiper-wrapper swiper_hover">
+
+                    <div class="swiper-slide vertical">
+                        <p class="best_tit">쉬믐 화분</p>
+                        <img src="./imges/main/main4_1.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide horizontal">
+                        <p class="best_tit">베렌 데일리 케어 세트</p>
+                        <img src="./imges/main/main4_2.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide vertical">
+                        <p class="best_tit">웜 라이트 램프</p>
+                        <img src="./imges/main/main4_3.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide horizontal">
+                        <p class="best_tit">보드라미 수건</p>
+                        <img src="./imges/main/main4_4.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide vertical">
+                        <p class="best_tit">유리하라 식기세트</p>
+                        <img src="./imges/main/main4_5.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide horizontal">
+                        <p class="best_tit">엠버 디퓨저</p>
+                        <img src="./imges/main/main4_6.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide vertical">
+                        <p class="best_tit">쉬믐 화분</p>
+                        <img src="./imges/main/main4_1.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide horizontal">
+                        <p class="best_tit">베렌 데일리 케어 세트</p>
+                        <img src="./imges/main/main4_2.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide vertical">
+                        <p class="best_tit">웜 라이트 램프</p>
+                        <img src="./imges/main/main4_3.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide horizontal">
+                        <p class="best_tit">보드라미 수건</p>
+                        <img src="./imges/main/main4_4.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide vertical">
+                        <p class="best_tit">유리하라 식기세트</p>
+                        <img src="./imges/main/main4_5.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide horizontal">
+                        <p class="best_tit">엠버 디퓨저</p>
+                        <img src="./imges/main/main4_6.jpg" alt="상품 이미지">
+                    </div>
+
+                </div>
+            </div>
+            <!-- section4 -->
+        </div>
+        <!-- /section4 -->
+
+        <!-- section5 - 매장소개 -->
+        <div id="section5">
+            <div class="inner_section5">
+                <div class="text_section5" data-aos="fade-right" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1500">
+                    <span>STORE</span>
+                    <p>
+                        VEREN의 제품을 직접 경험하고
+                        <br>
+                        가장 편안한 순간을 만나보세요.
+                    </p>
+                    <div class="button white_button">
+                        <a href="support.html?tab=Board05">보러가기</a>
+                    </div>
+                </div>
+
+                <div class="swiper_section5">
+                    <!-- slide swiper-->
+                    <div class="swiper store">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide slide2 visual_swiper">
+                                <img src="./imges/main/main5_1.jpg" alt="main banner">
+                                <p class="store_tit">해운대점</p>
+                            </div>
+
+                            <div class="swiper-slide slide2 visual_swiper">
+                                <img src="./imges/main/main5_2.jpg" alt="main banner">
+                                <p class="store_tit">연산점</p>
+                            </div>
+                            <div class="swiper-slide slide2 visual_swiper">
+                                <img src="./imges/main/main5_3.jpg" alt="main banner">
+                                <p class="store_tit">대구점</p>
+                            </div>
+                            <div class="swiper-slide slide2 visual_swiper">
+                                <img src="./imges/main/main5_4.jpg" alt="main banner">
+                                <p class="store_tit">광주점</p>
+                            </div>
+                            <div class="swiper-slide slide2 visual_swiper">
+                                <img src="./imges/main/main5_5.jpg" alt="main banner">
+                                <p class="store_tit">논현점</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-pagination"></div>
+                    <!-- /slide swiper -->
+                </div>
+            </div>
+        </div>
+        <!-- /section5 -->
+
+        <!-- section6 - 리뷰 - with veren -->
+        <div id="section6">
+            <div class="inner_section6">
+                <div class="with_title" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="500">
+                    <p>WITH</p>
+                    <img src="./imges/main/logo.svg" alt="로고">
+                </div>
+
+                <div class="swiper with"><!-- 얘네들은 js 구문 적용 용 -->
+                    <div class="swiper-wrapper">
+
+                        <!-- 네모난 상자 - 슬라이드 될 아이들 -->
+                        <div class="swiper-slide with_slide"><!-- 내가 꾸밀 애 클래스 줘서 꾸미기 -->
+                            <div class="with_transform">
+                                <div class="button yellow_button">
+                                    <a href="necessities.html?tab=Board06">보러가기</a>
+                                </div>
+                            </div>
+                            <img src="./imges/main/main6_1.jpg" alt="리뷰 사진">
+                            <div class="with_textbox">
+                                <p class="with_tit">
+                                    퇴근 후에 촛불 멍하고 <br>
+                                    있으면 심신이 안정돼요!
+                                </p>
+                                <div class="with_name">
+                                    <span>VEREN 캔들</span>
+                                    <img src="./imges/main/main6_0.jpg" alt="별점">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide with_slide">
+                            <div class="with_transform">
+                                <div class="button yellow_button">
+                                    <a href="necessities.html?tab=Board06">보러가기</a>
+                                </div>
+                            </div>
+                            <img src="./imges/main/main6_2.jpg" alt="리뷰 사진">
+                            <div class="with_textbox">
+                                <p class="with_tit">
+                                    샤워 후 바르는 것만으로도 <br>
+                                    산림욕 하는 기분이에요
+                                </p>
+                                <div class="with_name">
+                                    <span>숲속 바디로션</span>
+                                    <img src="./imges/main/main6_0.jpg" alt="별점">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide with_slide">
+                            <div class="with_transform">
+                                <div class="button yellow_button">
+                                    <a href="necessities.html?tab=Board04">보러가기</a>
+                                </div>
+                            </div>
+                            <img src="./imges/main/main6_3.jpg" alt="리뷰 사진">
+                            <div class="with_textbox">
+                                <p class="with_tit">
+                                    린넨 천이 <br>
+                                    냄새를 잡아줘요
+                                </p>
+                                <div class="with_name">
+                                    <span>대나무 바구니</span>
+                                    <img src="./imges/main/main6_0.jpg" alt="별점">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide with_slide">
+                            <div class="with_transform">
+                                <div class="button yellow_button">
+                                    <a href="necessities.html?tab=Board01?tab=Inner_board01">보러가기</a>
+                                </div>
+                            </div>
+                            <img src="./imges/main/main6_4.jpg" alt="리뷰 사진">
+                            <div class="with_textbox">
+                                <p class="with_tit">
+                                    디자인뿐만 아니라 그립감과 <br>
+                                    무게감까지 완벽해요
+                                </p>
+                                <div class="with_name">
+                                    <span>무광 도자기</span>
+                                    <img src="./imges/main/main6_0.jpg" alt="별점">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide with_slide">
+                            <div class="with_transform">
+                                <div class="button yellow_button">
+                                    <a href="necessities.html?tab=Board06">보러가기</a>
+                                </div>
+                            </div>
+                            <img src="./imges/main/main6_5.jpg" alt="리뷰 사진">
+                            <div class="with_textbox">
+                                <p class="with_tit">
+                                    점점 은은하게 퍼지는 라벤더 향이 <br>
+                                    마음을 편안하게 해주네요.
+                                </p>
+                                <div class="with_name">
+                                    <span>코지라벤 향초</span>
+                                    <img src="./imges/main/main6_0.jpg" alt="별점">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide with_slide">
+                            <div class="with_transform">
+                                <div class="button yellow_button">
+                                    <a href="necessities.html?tab=Board04">보러가기</a>
+                                </div>
+                            </div>
+                            <img src="./imges/main/main6_3.jpg" alt="리뷰 사진">
+                            <div class="with_textbox">
+                                <p class="with_tit">
+                                    린넨 천이 <br>
+                                    냄새를 잡아줘요
+                                </p>
+                                <div class="with_name">
+                                    <span>대나무 바구니</span>
+                                    <img src="./imges/main/main6_0.jpg" alt="별점">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- /section6 -->
+
+        <!-- section7 -->
+        <div id="section7">
+            <div class="inner_section7">
+                <div class="notice_tit">
+                    <p>NOTICE</p>
+                    <div class="button">
+                        <a href="support.html?tab=Board04">1:1문의</a>
+                    </div>
+                </div>
+
+                <ul class="notice_tit2">
+                    <li>
+                        <a href="support.html?tab=Board03">VEREN 서면점 휴점 리뉴얼 오픈 안내</a>
+                        <p>2026.03.12</p>
+                    </li>
+                    <li>
+                        <a href="support.html?tab=Board03">2026년 설날 연휴 배송안내</a>
+                        <p>2026.02.11</p>
+                    </li>
+                    <li>
+                        <a href="support.html?tab=Board03">[공지사항] VEREN 회원 이용 약관 변경 안내</a>
+                        <p>2025.12.01</p>
+                    </li>
+                    <li>
+                        <a href="support.html?tab=Board03">[공지사항] VEREN week 주문 증가에 따른 배송 지연 안내</a>
+                        <p>2025.11.14</p>
+                    </li>
+                    <li>
+                        <a href="support.html?tab=Board03">[고객 안내] 대나무 먼지털이 키트 포장 개선을 위한 일시 판매 중단 안내 </a>
+                        <p>2025.08.01</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /section7 -->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="inner_footer">
+                <div class="footer_left">
+                    <div class="footer_left_text1">
+                        <strong>
+                            고객센터
+                        </strong>
+                        <p>
+                            <a href="#">
+                                주문조회
+                            </a>
+                        </p>
+                        <p>
+                            <a href="support.html?tab=Board04">
+                                Q&A 문의
+                            </a>
+                        </p>
+                    </div>
+                    <div class="footer_left_text1">
+                        <strong>
+                            안내
+                        </strong>
+                        <p>
+                            <a href="support.html?tab=Board05">
+                                매장안내
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                인재채용
+                            </a>
+                        </p>
+                    </div>
+                    <div class="footer_left_text2">
+                        <strong>
+                            CS 운영시간
+                        </strong>
+                        <p>
+                            월-금 10:00 ~ 17:00 (공휴일 휴무)
+                        </p>
+                        <strong class="strong2">
+                            반품배송지
+                        </strong>
+                        <p>
+                            부산광역시 중구 중앙대로 54(중앙동 23-1)
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- sns랑 로고 position으로 띄워주기 -->
+                <div class="footer_right1">
+                    <ul class="footer_sns">
+                        <li>
+                            <a href="https://x.com/?lang=ko" target="_blank">
+                                <img src="./imges/main/main_footer_sns1.png" alt="sns x-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" target="_blank">
+                                <img src="./imges/main/main_footer_sns2.png" alt="sns facebook-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="./imges/main/main_footer_sns3.png" alt="sns instagram-icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="./imges/main/main_logo_white.svg" alt="logo">
+                </div>
+
+                <div class="footer_right">
+
+                    <p class="footer_p">
+                        TEl: 02-4682-0330 고객상담실: 01-050-3017 <br>
+                        본사: 부산광역시 중구 중앙대로 54(중앙동 23-1) <br>
+                        VEREN(주) 대표이사: 이예진 사업자등록번호:136-81-07235 <br>
+                        COPYRIGHT ⓒ VEREN LIVING ALL RIGHTS RESERVED <br>
+                        <br>
+                        이용약관 | 개인정보 처리방침
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /footer -->
+
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+
+    <script src="./js/script.js"></script>
+
+    <!-- aos scipt 연결 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+
+</html>
