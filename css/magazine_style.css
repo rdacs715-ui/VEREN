@@ -301,6 +301,42 @@ body {
     padding-bottom: 180px;
 }
 
+.shadow_box {
+    width: 650px;
+    height: 500px;
+    opacity: 0;
+    background-color: #3a3632;
+    border-radius: 40px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all 0.8s ease;
+}
+
+.shadow_box2 {
+    width: 427px;
+    height: 600px;
+    opacity: 0;
+    background-color: #3a3632;
+    border-radius: 40px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transition: all 0.8s ease;
+}
+
+.big_img:hover .shadow_box {
+    opacity: 0.3;
+}
+
+.small_img:hover .shadow_box2 {
+    opacity: 0.3;
+}
+
 .big {
     width: 1320px;
     display: flex;
@@ -319,6 +355,9 @@ body {
     padding-top: 300px;
     box-sizing: border-box;
     padding-left: 59px;
+
+    position: relative;
+
 }
 
 .big_img2 {
@@ -341,6 +380,11 @@ body {
 .big_img p {
     font-size: 18px;
     font-weight: 300;
+}
+
+.text_box {
+    position: relative;
+    z-index: 999;
 }
 
 /* big_txt - 글자 박스 */
@@ -391,6 +435,8 @@ body {
     padding-top: 405px;
     box-sizing: border-box;
     padding-left: 36px;
+
+    position: relative;
 }
 
 .small_img2 {
@@ -465,6 +511,8 @@ button {
     border: 1px solid #3a3632;
     cursor: pointer;
     font-weight: 500;
+
+    transition: all 0.8s ease;
 }
 
 button:hover {
@@ -474,6 +522,12 @@ button:hover {
 [data-aos] {
     will-change: transform, opacity;
     transform: translateZ(0);
+}
+
+
+.more_button:hover {
+    background-color: #3a3632;
+    color: #ede6d8;
 }
 
 
@@ -612,5 +666,14 @@ button:hover {
     border-radius: 50px;
     margin-top: 70px;
     background-color: #877d73;
+    border: 1px solid #877d73;
     font-weight: 500;
+
+    transition: all 0.8s ease;
+}
+
+.inner_product_txt .button a:hover {
+    background-color: #f9f2ea;
+    color: #3a3632;
+    border: 1px solid #877d73;
 }

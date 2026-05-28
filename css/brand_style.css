@@ -580,6 +580,12 @@ body {
     font-weight: 500;
 
     margin-top: 70px;
+    transition: all 0.8s ease;
+}
+
+.button a:hover {
+    background-color: #3a3632;
+    color: #ede6d8;
 }
 
 
