@@ -53,7 +53,7 @@ $(document).ready(function () {
   // AOS 초기화
   AOS.init({
     duration: 1000,  // 전체 애니메이션 속도
-    once: true, // 스크롤 내릴 때 한 번만 실행
+    // once: true, // 스크롤 내릴 때 한 번만 실행
     offset: 100, // 화면 하단 기준 발동 거리
   });
 
